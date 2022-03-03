@@ -10,3 +10,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@font-face {
+  font-family: 'WCL-07';
+  src: local('WCL-07'), url(./assets/fonts/WCL-07.ttf) format('truetype');
+}
