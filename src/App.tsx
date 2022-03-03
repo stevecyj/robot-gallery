@@ -3,6 +3,7 @@ import logo from './assets/images/logo.svg';
 import styles from './App.module.css';
 import robots from './mockdata/robots.json';
 import Robot from './components/Robot';
+import ShoppingCart from './components/ShoppingCart';
 
 // const html = "<img onerror='alert(\"Hacked\")' src='invalid-image' />";
 // const jsHacked = "javascript: alert('Hacked!');";
@@ -16,6 +17,7 @@ function App() {
         <img src={logo} className={styles.appLogo} alt='logo' />
         <h1>羅伯特機器人炫酷吊炸天 online 購物平台的名字要長</h1>
       </div>
+      <ShoppingCart />
       <div className={styles.robotList}>
         {robots.map((r) => (
           <Robot id={r.id} email={r.email} name={r.name} />
