@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './App.css';
+import styles from './App.module.css';
 import robots from './mockdata/robots.json';
 import Robot from './components/Robot';
 
@@ -8,15 +8,15 @@ import Robot from './components/Robot';
 
 function App() {
   return (
-    <>
+    <div className='app'>
       {/* <div>{html}</div>
       <a href={jsHacked}>my site</a> */}
-      <ul>
+      <div className={styles.robotList}>
         {robots.map((r) => (
           <Robot id={r.id} email={r.email} name={r.name} />
         ))}
-      </ul>
-    </>
+      </div>
+    </div>
   );
 }
 
